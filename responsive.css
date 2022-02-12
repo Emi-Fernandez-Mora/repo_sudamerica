@@ -43,7 +43,7 @@ footer{
         grid-template-areas: "header""nav" "section-index" "footer" ;
         }
 
-    .titulos{
+    .animate__animated{
         font-size: 50px;
         text-align: center;
         margin-bottom: 0px;
@@ -262,6 +262,9 @@ footer{
         }
 
     .formulario1{
+        display: block;
+        justify-content: center;
+        align-items: center;
         margin-top: 50px;
         padding-bottom: 50px;
     }
@@ -364,14 +367,16 @@ footer{
 }   
 
 @media screen and (min-width: 1200px){
-     .titulos{
+    .animate__animated {
         font-size: 80px;
         text-align: center;
         font-weight: bold;
         margin-top: 5px;
         margin-bottom: 0px;
-     }
-     .slogan{
+        width: 100%;
+        }
+     
+    .slogan{
         font-size: 25px;
         text-align: center;
         margin-top: 0px;}
@@ -510,16 +515,28 @@ footer{
     .fieldset-contacto{
         margin-left: 700px;
         margin-right: 700px;
-        width: 500px;
+        width: 480px;
+        height: 368px;
     }
     
 
     .formulario1{
-        margin-top: 100px;
-        padding-bottom: 120px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 70px;
+        padding-bottom: 0px;
         font-size: 23px;
     }
-
+    
+    .LegendContacto{
+        font-size:35px ;
+        font-weight: 989;
+    }
+    .navegador-ul{
+        padding-top: 20px;
+    }
     /*VIP*/
 
     .sudavip{
@@ -533,7 +550,7 @@ footer{
 
     .fieldset-VIP{
         margin: 0 700px;
-        height: 380px;
+        height: 390px;
     }
     .formulario2{
         font-size: 23px;
@@ -544,6 +561,10 @@ footer{
         width: 200px;
     }
 
+    .legendVIP{
+        font-size:35px ;
+        font-weight: 989;
+    }
 
 
 
