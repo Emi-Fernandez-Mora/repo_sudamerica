@@ -126,29 +126,52 @@ body{
     width: 73px;
     border-radius: 50%;
     
-    margin-top: 13px;
-    margin-left: 268px;
+}
+
+.fondobtn{
+    width: 1686px;
+}
+.fondobtn{
+    height: 100px;
+    background-image: url("fondobtn.png");
+    margin:0 109px;
+}
+.links-unirse{
+    height: 35px;
+    width:80px;
+    margin-left: 867px;
+    margin-top: 26px;
+    padding: 0%;
     
 }
-.link-logo{
-    background-image: url("fondobtn.PNG");
-    width: 100%;
-    margin-left: 110px ;
-    height: 100px;
+.link-suda{
+    height: 80px;
+    width: 80px;
+    margin-left: 270px;
+    margin-top: 6px;
+    padding:0%
+}
+.link-susc{
+    width: 115px;
+    height:35px ;
+    padding: 0%;
+    margin-left: 9px;
+    margin-top: 23px;
+
+}
+/*Contacto*/
+
+.formulario1{
+    background-color: white ;
+    
 }
 
-.logo:hover{
-    width: 76px;
-}
-.btnUnirse{
-    width: 70px;
-   /* margin-left: 872px;
-    margin-top: 9px;*/
-}
-.btnUnirse:hover{
-    width: 83px ;
-}
 
-.linkUnirse{
-    width: 30px;
-}
+
+
+
+
+
+
+
+
