@@ -3,7 +3,7 @@
 
 body{
     font-family: 'Oswald', sans-serif !important;
-    background-image:url("fondo nuevo.png")!important;
+    background-image:url("corner.jpg")!important;
     min-height: 100% !important; 
     background-attachment: fixed;
     background-repeat: no-repeat;
@@ -110,4 +110,45 @@ body{
     margin-left: 513px !important;
     padding: 0px !important;
     border-radius: 3%;
+}
+
+/*Videos*/
+
+.conjunto-videos{
+    
+}
+.banner-youtube{
+    width: 100%;
+    height: 25%;
+    padding: 0%;
+}
+.logo{
+    width: 73px;
+    border-radius: 50%;
+    
+    margin-top: 13px;
+    margin-left: 268px;
+    
+}
+.link-logo{
+    background-image: url("fondobtn.PNG");
+    width: 100%;
+    margin-left: 110px ;
+    height: 100px;
+}
+
+.logo:hover{
+    width: 76px;
+}
+.btnUnirse{
+    width: 70px;
+   /* margin-left: 872px;
+    margin-top: 9px;*/
+}
+.btnUnirse:hover{
+    width: 83px ;
+}
+
+.linkUnirse{
+    width: 30px;
 }
