@@ -274,3 +274,28 @@ body{
     margin-top: 20px;
     
 }
+
+$ParrafosVIP:(
+    "text-align-div": center,
+    "font-size": 24px,
+    "color": white,
+    "background": black,
+    "padding": 30px,
+    "text-align-p":justify,
+);
+
+.parrafoVip{
+    column-gap: 20px !important;
+        div{
+            width: $anchoForm/1.3;
+            text-align: map-get($map: $ParrafosVIP, $key: text-align-div);
+            font-size: map-get($map: $ParrafosVIP, $key: font-size) ;
+            color: map-get($map: $ParrafosVIP, $key: "color");
+            background-color: map-get($map: $ParrafosVIP, $key: "background");
+            padding:  map-get($map: $ParrafosVIP, $key: padding);
+        }
+        p{
+            text-align:  map-get($map: $ParrafosVIP, $key: text-align-p);
+        };
+}
+

@@ -260,3 +260,20 @@ body {
   width: 750px !important;
   margin-top: 20px;
 }
+
+.parrafoVip {
+  column-gap: 20px !important;
+}
+
+.parrafoVip div {
+  width: 576.92308px;
+  text-align: center;
+  font-size: 24px;
+  color: white;
+  background-color: black;
+  padding: 30px;
+}
+
+.parrafoVip p {
+  text-align: justify;
+}
