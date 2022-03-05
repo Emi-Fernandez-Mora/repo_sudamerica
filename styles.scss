@@ -66,10 +66,26 @@ footer{
 
 }
 .subtitulo{
-    border-top-right-radius: 20px;
-    border-bottom-right-radius: 20px;
-    position: relative;
+    width: 100%;
+    height: 70px;
+    margin-top: 0;
+    background-color: #020000;
+    margin-bottom: 3%;
+
+    h3{
+        display: flex;
+        justify-content: center;
+        padding-top: 0;
+        font-size: 60px;
+        letter-spacing: 10px;
+    }
 }
+
+.animate__animated.animate__fadeInLeft{
+    animation-delay: 0.2s;
+    animation-duration: 2.7s;
+}
+ 
 
 .videos{
     width: 854px;
@@ -157,17 +173,48 @@ footer{
 .logo{
     width: 73px;
     border-radius: 50%;
+    margin-top: 0.6%;
     
 }
+.logo-index{
+    width: 57px;
+    border-radius: 50%;
+    margin-right: 5px;
+    
+}
+div{
+    li{
+        text-decoration: none;
+            list-style: none;
+        
+    }
+}
 
-.fondobtn{
-    width: 1686px;
+.btnVideos{
+    display: inline-flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 10vh;
+    background-color: $colorYT;
 }
-.fondobtn{
-    height: 100px;
-    background-image: url("fondobtn.png");
-    margin:0 109px;
+.btnVideos2{
+    display: inline-flex;
+    margin: 0 17% 0 17%
 }
+.btn-sc{
+    margin-top: 1%;
+    li{
+        margin:0 5px
+    }
+}
+.texto-sc{
+    color: var(--yt-lightsource-secondary-title-color);
+    font-family: "Roboto","Arial",sans-serif;
+    font-size: 1.4rem;
+    line-height: 2rem;
+    font-weight: 400;
+}
+
 .links-unirse{
     height: 35px;
     width:80px;
