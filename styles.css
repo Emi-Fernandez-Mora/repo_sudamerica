@@ -2,13 +2,20 @@
 @import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200;400&family=Poppins:wght@100&display=swap");
 body {
   font-family: 'Oswald', sans-serif !important;
-  background-image: url("corner.jpg") !important;
-  min-height: 100% !important;
+  background-image: url("corner.jpg");
+  min-height: 100%;
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   margin-bottom: 0px;
+  height: 100%;
+}
+
+footer {
+  position: relative;
+  overflow: hidden;
+  z-index: 2;
 }
 
 .navbar-brand {
@@ -21,6 +28,10 @@ body {
 
 .navbar {
   background-color: black;
+  position: fixed;
+  z-index: 12;
+  width: 100%;
+  top: 0;
 }
 
 .navbar-expand-lg .navbar-collapse {
@@ -28,16 +39,27 @@ body {
 }
 
 .slogan {
-  margin: 0 490px;
+  width: 100%;
+  height: 300px;
+  background-image: url("https://digital58.com.ve/site/wp-content/uploads/2020/06/Sudamerica.jpg");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
 .slogan2 {
-  font-size: 17px;
+  font-size: 50px;
+  font-weight: bolder;
+  color: #050101;
+  text-align: center;
+  padding: 9%;
 }
 
 .subtitulo, .subtitulo-vip {
   border-top-right-radius: 20px;
   border-bottom-right-radius: 20px;
+  position: relative;
 }
 
 .videos {
@@ -69,12 +91,17 @@ body {
   margin-top: 15px !important;
 }
 
+.perfiles{
+  margin-top: 10%;
+}
+
 .jano-card, .card-formulario1, .card-formulario2 {
-  width: 850px !important;
-  height: 710px !important;
-  margin-left: 513px !important;
-  padding: 0px !important;
+  width: 850px ;
+  height: 710px;
+  margin: auto;
+  padding: 0px;
   border-radius: 3%;
+  background-color: rgba(255, 255, 255, 0.5);
 }
 
 .jano-body {
@@ -88,8 +115,8 @@ body {
   width: 810px !important;
   font-size: 80px;
   margin-top: 20px !important;
-  padding: 3px !important;
-  border-radius: 10px !important;
+  padding: 50px important;
+  border-radius: 10px;
 }
 
 .parrafo-jano {
@@ -110,12 +137,17 @@ body {
 .eros-card {
   width: 850px !important;
   height: 813px !important;
-  margin-left: 513px !important;
+  margin: auto;
   padding: 0px !important;
   border-radius: 3%;
 }
 
 /*Videos*/
+.conjunto-videos {
+  position: relative;
+  z-index: 10;
+}
+
 .banner-youtube {
   width: 100%;
   height: 25%;
@@ -276,4 +308,147 @@ body {
 
 .parrafoVip p {
   text-align: justify;
+}
+
+/* FONDO ANIMADO*/
+.contenedor {
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.bg_animate {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to right, #01a2d3, #4939b4);
+  position: relative;
+  overflow: hidden;
+}
+
+/* burbujas */
+.burbuja {
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.404);
+  opacity: 0.3;
+  z-index: 0;
+  position: absolute;
+  bottom: 0;
+  animation: burbujas 3s linear infinite;
+}
+
+.burbujas {
+  border-radius: 50%;
+  width: 100px;
+}
+.conteinerBurb{
+  height: 100%;
+}
+
+.burbuja:nth-child(1) {
+  width: 80px;
+  height: 80px;
+  left: 5%;
+  animation-duration: 3s;
+  animation-delay: 1s;
+}
+
+.burbuja:nth-child(2) {
+  width: 100px;
+  height: 100px;
+  left: 35%;
+  animation-duration: 3s;
+  animation-delay: 1s;
+}
+
+.burbuja:nth-child(3) {
+  width: 20px;
+  height: 20px;
+  left: 15%;
+  animation-duration: 1.5s;
+  animation-delay: 1s;
+}
+
+.burbuja:nth-child(4) {
+  width: 50px;
+  height: 50px;
+  left: 90%;
+  animation-duration: 6s;
+  animation-delay: 3s;
+}
+
+.burbuja:nth-child(5) {
+  width: 70px;
+  height: 70px;
+  left: 65%;
+  animation-duration: 3s;
+  animation-delay: 1s;
+}
+
+.burbuja:nth-child(6) {
+  width: 20px;
+  height: 20px;
+  left: 50%;
+  animation-duration: 4s;
+  animation-delay: 1s;
+}
+
+.burbuja:nth-child(7) {
+  width: 20px;
+  height: 20px;
+  left: 50%;
+  animation-duration: 4s;
+  animation-delay: 1s;
+}
+
+.burbuja:nth-child(8) {
+  width: 100;
+  height: 100px;
+  left: 52%;
+  animation-duration: 5s;
+  animation-delay: 1s;
+}
+
+.burbuja:nth-child(9) {
+  width: 65px;
+  height: 65px;
+  left: 51%;
+  animation-duration: 3s;
+  animation-delay: 1s;
+}
+
+.burbuja:nth-child(10) {
+  width: 40px;
+  height: 40px;
+  left: 35%;
+  animation-duration: 3s;
+  animation-delay: 1s;
+}
+
+@keyframes burbujas {
+  0% {
+    bottom: 0;
+    opacity: 0;
+  }
+  30% {
+    transform: translateX(30px);
+  }
+  50% {
+    opacity: .4;
+  }
+  100% {
+    bottom: 100vh;
+    opacity: 0;
+  }
+}
+
+@keyframes movimiento {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(30px);
+  }
+  100% {
+    transform: translateY(0);
+  }
 }
