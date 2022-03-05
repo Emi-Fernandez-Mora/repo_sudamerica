@@ -153,6 +153,16 @@ footer {
   border-radius: 3%;
 }
 
+section.perfiles {
+  margin: auto auto auto auto;
+  padding-bottom: 0;
+}
+
+section.perfiles article {
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
 .cardJano {
   position: relative;
   height: 450px;
@@ -344,6 +354,18 @@ div li {
 }
 
 /*Contacto*/
+.navbarContacto {
+  height: 11%;
+}
+
+ul.navbar-nav li {
+  padding: 0 10px;
+}
+
+ul.navbar-nav li a {
+  font-size: 23px;
+}
+
 .formulario1 {
   background-color: #020000;
 }
@@ -458,6 +480,108 @@ div li {
 
 .parrafoVip p {
   text-align: justify;
+}
+
+/*Nuevo formulario*/
+.formularioNuevo {
+  width: 750px;
+  margin: 5% auto;
+}
+
+.formularioNuevo h1 {
+  padding: 10px;
+  font-weight: 350;
+  font-size: 45px;
+  color: black;
+}
+
+.formularioNuevo form div div label {
+  color: black;
+  font-size: 18px;
+}
+
+.formularioNuevo form div div input {
+  color: black;
+  background-color: black;
+}
+
+.input-field input[type=text], .input-field input[type=email] {
+  border-bottom: 1px solid #000;
+  box-shadow: 0 1px 0 0 #000;
+}
+
+p label input {
+  background-color: black;
+}
+
+p label span {
+  color: black;
+}
+
+.botonForms {
+  font-weight: 600;
+  font-size: 18px;
+  color: #000000;
+  padding: 0px;
+  padding-left: 40px;
+  padding-right: 40px;
+  background-color: transparent;
+  border-width: 3px;
+  border-color: #000000;
+}
+
+.checkEmpre {
+  font-size: 18px !important;
+}
+
+.div-checkbox {
+  display: inline-flex;
+}
+
+.div-botones {
+  display: inline-flex;
+  margin-left: 300px !important;
+}
+
+.div-botones button {
+  margin: 1px;
+}
+
+.sectionContacto {
+  height: 100%;
+  margin: auto;
+}
+
+/*Cambiando de color inputs focus*/
+[type="checkbox"] + span:not(.lever):before {
+  border: 2px solid black;
+}
+
+[type="checkbox"]:checked + span:not(.lever):before {
+  border-right: 2px solid #040a0a;
+  border-bottom: 2px solid #060a0a;
+  border-top: 2px solid transparent;
+  border-left: 2px solid transparent;
+}
+
+input[type=text]:not(.browser-default):focus:not([readonly]) + label {
+  color: black;
+}
+
+input[type=text]:not(.browser-default):focus:not([readonly]) {
+  color: black;
+  border-bottom: 1px solid black;
+  box-shadow: 0 1px 0 0 #000;
+}
+
+input[type=email]:not(.browser-default):focus:not([readonly]) + label {
+  color: black;
+}
+
+input[type=email]:not(.browser-default):focus:not([readonly]) {
+  color: black;
+  border-bottom: 1px solid black;
+  box-shadow: 0 1px 0 0 #000;
 }
 
 /* FONDO ANIMADO*/
