@@ -51,6 +51,7 @@ footer{
     background-size: cover;
     
     
+    
 
 
 }
@@ -387,147 +388,16 @@ ul.navbar-nav{
     }
 }
 
-.formulario1{
-    background-color: rgb(2, 0, 0) ;
-    
-}
-
-.body.formulario1{
-    width: 100%;
-    display: block;
-}
-.labelNombre{
-    font-size: 30px;
-    color:  white;
-    padding: 10px;
-    width: 450px;
-}
-
-.inputNombre{
-    width: 300px;
-}
-
-//Entiendo que conviene usar mas un mixin, lo demuestro en el proximo form//
-
-.labelMail{
-    @extend .labelNombre;
-}
-
-.inputMail{
-    @extend .inputNombre
-}
-
-.labelTexto{
-    @extend .labelNombre;
-    width: $anchoForm;
-    display: flex;
-    justify-content: start;
-    height: 10px;
-    margin-top: 0px;
-}
-
-.textArea{
-    width: $anchoForm;
-    height: 100px;
-    margin: 0 13px;
-}
-
-@mixin botonesForm {
-    width: 375px;
-    padding: 4px;
-    font-size: 25x;
-    background-color: white;
-    color: black;
-    border-radius: 7px;
-    border: solid;
-    margin: 0 12px;
-    text-align: center;
-    
-}
-
-.btnEnviar{
-    @include botonesForm()
-}
-
-.btnReset{
-    @include botonesForm()
-}
-
-.cuerpoForm1{
-    height: 435px;
-}
-
-.card-formulario1{
-    @extend .jano-card;
-    height:605px !important;
-}
-
-
-.labelDNI,
-.labelNac,
-.labelDom,
-.labelFDN{
-    @extend .labelNombre
-}
-
-.inputDNI,
-.inputNac,
-.inputDom,
-.inputFDN,{
-    @extend .inputNombre
-}
-
-.card-formulario2{
-    @extend .jano-card;
-    height:814px !important;
-}
-
-.cuerpoForm2{
-    height: 650px;
-}
-.mdp{
-    @include botonesForm;
-    width: $anchoForm;
-    font-size: 28;
-}
-
-.subtitulo-vip{
-    @extend .subtitulo;
-    width: $anchoForm !important;
-    margin-top: 20px;
-    
-}
-
-$ParrafosVIP:(
-    "text-align-div": center,
-    "font-size": 24px,
-    "color": white,
-    "background": black,
-    "padding": 30px,
-    "text-align-p":justify,
-);
-
-
-
-.parrafoVip{
-    column-gap: 20px !important;
-        div{
-            width: $anchoForm/1.3;
-            text-align: map-get($map: $ParrafosVIP, $key: text-align-div);
-            font-size: map-get($map: $ParrafosVIP, $key: font-size) ;
-            color: map-get($map: $ParrafosVIP, $key: "color");
-            background-color: map-get($map: $ParrafosVIP, $key: "background");
-            padding:  map-get($map: $ParrafosVIP, $key: padding);
-        }
-        p{
-            text-align:  map-get($map: $ParrafosVIP, $key: text-align-p);
-        };
+.subtituloContacto{
+    margin-top: 7%;
+    height: 50vh;
 }
 
 /*Nuevo formulario*/
 .formularioNuevo{
     width: $anchoForm;
-    margin:5% auto;
+    margin:0 auto;
+    padding: 0%;
     h1{
         padding: 10px;
         font-weight: 350;
@@ -610,7 +480,8 @@ p{
 
 .sectionContacto{
     height: 100%;
-    margin: auto;
+    margin-top:17%
+    
 }
 /*Cambiando de color inputs focus*/
 
@@ -644,21 +515,267 @@ input[type=email]:not(.browser-default):focus:not([readonly]){
     box-shadow: 0 1px 0 0 #000;
 }
 
+input.valid[type=text]:not(.browser-default){
+    border-bottom: 1px solid #000000;
+    -webkit-box-shadow: 0 1px 0 0 #050505;
+    box-shadow: 0 1px 0 0 #020202;
+}
+input.invalid[type=email]:not(.browser-default){
+    border-bottom: 1px solid #080707;
+    -webkit-box-shadow: 0 1px 0 0 #020202;
+    box-shadow: 0 1px 0 0 #0c0c0c;
+}
+
+
+/*Titulo contacto*/
+@import url(https://fonts.googleapis.com/css?family=Erica+One);
+/* BODY */
+
+::selection {
+  background: transparent;
+}
+
+.subtituloContacto {
+  cursor: default;
+  position: absolute;
+  top: 30px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin-top: 7%;
+  height: 100px;
+  display: block;
+  
+  -webkit-animation: bounce .3s ease 10 alternate;
+  
+  font-family: 'Erica One', cursive;
+  font-size: 80px;
+  color: #FFF;
+  text-align: center;
+  line-height: 100px;
+  text-shadow: 0 1px 0 #CCC,
+               0 2px 0 #CCC,
+               0 3px 0 #CCC,
+               0 4px 0 #CCC,
+               0 5px 0 #CCC,
+               0 6px 0 transparent,
+               0 7px 0 transparent,
+               0 8px 0 transparent,
+               0 9px 0 transparent,
+               0 10px 10px rgba(0, 0, 0, .6);
+}
+/* ANIMATION */
+@-webkit-keyframes bounce {
+  100% {
+    top: -30px;
+    
+    text-shadow: 0 1px 0 #CCC,
+                 0 2px 0 #CCC,
+                 0 3px 0 #CCC,
+                 0 4px 0 #CCC,
+                 0 5px 0 #CCC,
+                 0 6px 0 #CCC,
+                 0 7px 0 #CCC,
+                 0 8px 0 #CCC,
+                 0 9px 0 #CCC,
+                 0 30px 30px rgba(0, 0, 0, .3);
+  }
+}
+
+
+/*Suda Vip*/
+.cont-card-vip{
+    display: flex;
+    justify-content: space-evenly;
+}
 
 
 
+//Nuevas Cards//
+
+.container .card .icon {
+
+    position: absolute;
+
+    top: 0;
+
+    left: 0;
+
+    width: 100%;
+
+    height: 100%;
+
+    background: #000000;
+    
+
+}
 
 
+.container .card .icon .fa {
+
+    position: absolute;
+
+    top: 50%;
+
+    left: 50%;
+
+    transform: translate(-50%, -50%);
+
+    font-size: 80px;
+
+    color: #fff;
+
+}
+
+.container .card .slide {
+
+    width: 300px;
+
+    height: 200px;
+
+    transition: 0.5s;
+    ;
+
+}
 
 
+.container .card .slide.slide1 {
+
+    position: relative;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    z-index: 1;
+
+    transition: .7s;
+
+    transform: translateY(100px);
+    
+
+}
+
+.container .card:hover .slide.slide1{
+
+    transform: translateY(0px);
+
+}
+
+.container .card .slide.slide2 {
+
+    position: relative;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    padding: 20px;
+
+    box-sizing: border-box;
+
+    transition: .8s;
+
+    transform: translateY(-100px);
+
+    box-shadow: 0 20px 40px rgba(0,0,0,0.4);
+
+}
+
+.container .card:hover .slide.slide2{
+
+    transform: translateY(0);
+
+}
+
+.container .card .slide.slide2::after{
+
+    content: "";
+
+    position: absolute;
+
+    width: 30px;
+
+    height: 4px;
+
+    bottom: 15px;
+
+    left: 50%;
+
+    left: 50%;
+
+    transform: translateX(-50%);
+
+    background: #ccd2db;
+
+}
+.content-cardVip{
+    background-color: 000;
+}
+
+.container .card .slide.slide2 .content p {
+
+    margin: 0;
+
+    padding: 0;
+
+    text-align: center;
+
+    color: #414141;
+
+}
+
+.container .card .slide.slide2 .content h3 {
+
+    margin: 0 0 10px 0;
+
+    padding: 0;
+
+    font-size: 24px;
+
+    text-align: center;
+
+    color: #414141;
+    
+
+} 
 
 
+.fotoCardVip{
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+}
 
-
-
-
-
-
+.card-vip{
+    display: flex;
+    background-color: rgba(255, 255, 255, 0);
+    box-shadow: 0;
+    background-clip: none;
+    border: 0 none rgba(0,0,0,.0);
+    border-radius: 0.25rem;
+    width: 300px
+}
+.container-cards{
+    margin: auto;
+    display:inline-flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+    padding: auto;
+    margin: 0 10% 0 10%;
+    
+    
+}
+.sectionVIP{
+    height: 100%;
+    margin-top:3%
+    
+}
 
 //FONDO ANIMADO//
 

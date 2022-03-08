@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Oswald&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200;400&family=Poppins:wght@100&display=swap");
+@import url(https://fonts.googleapis.com/css?family=Erica+One);
 body {
   font-family: 'Oswald', sans-serif !important;
   background-image: url("corner.jpg");
@@ -38,6 +39,7 @@ footer {
   margin-right: 200px;
 }
 
+
 .slogan {
   width: 100%;
   height: 300px;
@@ -56,7 +58,7 @@ footer {
   padding: 9%;
 }
 
-.subtitulo, .subtitulo-vip {
+.subtitulo {
   width: 100%;
   height: 70px;
   margin-top: 0;
@@ -64,7 +66,7 @@ footer {
   margin-bottom: 3%;
 }
 
-.subtitulo h3, .subtitulo-vip h3 {
+.subtitulo h3 {
   display: flex;
   justify-content: center;
   padding-top: 0;
@@ -106,7 +108,7 @@ footer {
   margin-top: 15px !important;
 }
 
-.jano-card, .card-formulario1, .card-formulario2 {
+.jano-card {
   width: 850px !important;
   height: 710px !important;
   margin-left: 513px !important;
@@ -366,126 +368,16 @@ ul.navbar-nav li a {
   font-size: 23px;
 }
 
-.formulario1 {
-  background-color: #020000;
-}
-
-.body.formulario1 {
-  width: 100%;
-  display: block;
-}
-
-.labelNombre, .labelMail, .labelTexto, .labelDNI,
-.labelNac,
-.labelDom,
-.labelFDN {
-  font-size: 30px;
-  color: white;
-  padding: 10px;
-  width: 450px;
-}
-
-.inputNombre, .inputMail, .inputDNI,
-.inputNac,
-.inputDom,
-.inputFDN {
-  width: 300px;
-}
-
-.labelTexto {
-  width: 750px;
-  display: flex;
-  justify-content: start;
-  height: 10px;
-  margin-top: 0px;
-}
-
-.textArea {
-  width: 750px;
-  height: 100px;
-  margin: 0 13px;
-}
-
-.btnEnviar {
-  width: 375px;
-  padding: 4px;
-  font-size: 25x;
-  background-color: white;
-  color: black;
-  border-radius: 7px;
-  border: solid;
-  margin: 0 12px;
-  text-align: center;
-}
-
-.btnReset {
-  width: 375px;
-  padding: 4px;
-  font-size: 25x;
-  background-color: white;
-  color: black;
-  border-radius: 7px;
-  border: solid;
-  margin: 0 12px;
-  text-align: center;
-}
-
-.cuerpoForm1 {
-  height: 435px;
-}
-
-.card-formulario1 {
-  height: 605px !important;
-}
-
-.card-formulario2 {
-  height: 814px !important;
-}
-
-.cuerpoForm2 {
-  height: 650px;
-}
-
-.mdp {
-  width: 375px;
-  padding: 4px;
-  font-size: 25x;
-  background-color: white;
-  color: black;
-  border-radius: 7px;
-  border: solid;
-  margin: 0 12px;
-  text-align: center;
-  width: 750px;
-  font-size: 28;
-}
-
-.subtitulo-vip {
-  width: 750px !important;
-  margin-top: 20px;
-}
-
-.parrafoVip {
-  column-gap: 20px !important;
-}
-
-.parrafoVip div {
-  width: 576.92308px;
-  text-align: center;
-  font-size: 24px;
-  color: white;
-  background-color: black;
-  padding: 30px;
-}
-
-.parrafoVip p {
-  text-align: justify;
+.subtituloContacto {
+  margin-top: 7%;
+  height: 50vh;
 }
 
 /*Nuevo formulario*/
 .formularioNuevo {
   width: 750px;
-  margin: 5% auto;
+  margin: 0 auto;
+  padding: 0%;
 }
 
 .formularioNuevo h1 {
@@ -549,7 +441,7 @@ p label span {
 
 .sectionContacto {
   height: 100%;
-  margin: auto;
+  margin-top: 17%;
 }
 
 /*Cambiando de color inputs focus*/
@@ -582,6 +474,195 @@ input[type=email]:not(.browser-default):focus:not([readonly]) {
   color: black;
   border-bottom: 1px solid black;
   box-shadow: 0 1px 0 0 #000;
+}
+
+input.valid[type=text]:not(.browser-default) {
+  border-bottom: 1px solid #000000;
+  -webkit-box-shadow: 0 1px 0 0 #050505;
+  box-shadow: 0 1px 0 0 #020202;
+}
+
+input.invalid[type=email]:not(.browser-default) {
+  border-bottom: 1px solid #080707;
+  -webkit-box-shadow: 0 1px 0 0 #020202;
+  box-shadow: 0 1px 0 0 #0c0c0c;
+}
+
+/*Titulo contacto*/
+/* BODY */
+::selection {
+  background: transparent;
+}
+
+.subtituloContacto {
+  cursor: default;
+  position: absolute;
+  top: 30px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin-top: 7%;
+  height: 100px;
+  display: block;
+  -webkit-animation: bounce .3s ease 10 alternate;
+  font-family: 'Erica One', cursive;
+  font-size: 80px;
+  color: #FFF;
+  text-align: center;
+  line-height: 100px;
+  text-shadow: 0 1px 0 #CCC, 0 2px 0 #CCC, 0 3px 0 #CCC, 0 4px 0 #CCC, 0 5px 0 #CCC, 0 6px 0 transparent, 0 7px 0 transparent, 0 8px 0 transparent, 0 9px 0 transparent, 0 10px 10px rgba(0, 0, 0, 0.6);
+}
+
+/* ANIMATION */
+@-webkit-keyframes bounce {
+  100% {
+    top: -30px;
+    text-shadow: 0 1px 0 #CCC, 0 2px 0 #CCC, 0 3px 0 #CCC, 0 4px 0 #CCC, 0 5px 0 #CCC, 0 6px 0 #CCC, 0 7px 0 #CCC, 0 8px 0 #CCC, 0 9px 0 #CCC, 0 30px 30px rgba(0, 0, 0, 0.3);
+  }
+}
+
+/*Suda Vip*/
+.cont-card-vip {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.subtitulo-vip{
+  width: 100%;
+  height: 300px;
+  background-image: url('cancharacing.jpg');
+  background-size: cover;
+  background-attachment:;
+
+  
+}
+
+.sloganVip{
+  font-size: 80px;
+  margin: auto;
+  padding: auto;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  
+}
+
+
+.container .card .icon {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #000000;
+}
+
+.container .card .icon .fa {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 80px;
+  color: #fff;
+}
+
+.container .card .slide {
+  width: 300px;
+  height: 200px;
+  transition: 0.5s;
+}
+
+.container .card .slide.slide1 {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+  transition: .7s;
+  transform: translateY(100px);
+}
+
+.container .card:hover .slide.slide1 {
+  transform: translateY(0px);
+}
+
+.container .card .slide.slide2 {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  box-sizing: border-box;
+  transition: .8s;
+  transform: translateY(-100px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+}
+
+.container .card:hover .slide.slide2 {
+  transform: translateY(0);
+}
+
+.container .card .slide.slide2::after {
+  content: "";
+  position: absolute;
+  width: 30px;
+  height: 4px;
+  bottom: 15px;
+  left: 50%;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #ccd2db;
+}
+
+.content-cardVip {
+  background-color: 000;
+}
+
+.container .card .slide.slide2 .content p {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  color: #414141;
+}
+
+.container .card .slide.slide2 .content h3 {
+  margin: 0 0 10px 0;
+  padding: 0;
+  font-size: 24px;
+  text-align: center;
+  color: #414141;
+}
+
+.fotoCardVip {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+}
+
+.card-vip {
+  display: flex;
+  background-color: rgba(255, 255, 255, 0);
+  box-shadow: 0;
+  background-clip: none;
+  border: 0 none transparent;
+  border-radius: 0.25rem;
+  width: 300px;
+}
+
+.container-cards {
+  margin: auto;
+  display: inline-flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: auto;
+  padding: auto;
+  margin: 0 10% 0 10%;
+}
+
+.sectionVIP {
+  height: 100%;
+  margin-top: 3%;
 }
 
 /* FONDO ANIMADO*/
