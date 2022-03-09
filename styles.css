@@ -39,11 +39,10 @@ footer {
   margin-right: 200px;
 }
 
-
 .slogan {
   width: 100%;
   height: 300px;
-  background-image: url("https://digital58.com.ve/site/wp-content/uploads/2020/06/Sudamerica.jpg");
+  background-image: linear-gradient(to right, rgba(39, 38, 38, 0.404), rgba(0, 0, 0, 0.445)), url("https://digital58.com.ve/site/wp-content/uploads/2020/06/Sudamerica.jpg");
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-position: center;
@@ -91,6 +90,28 @@ footer {
 /*Nosotros*/
 .fotos {
   width: 300px;
+}
+
+.containerNosotros {
+  display: flex;
+  justify-content: center;
+  padding-top: 20vh;
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(to right, rgba(39, 38, 38, 0.404), rgba(0, 0, 0, 0.445)), url("cardNosotros.webp");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.containerNosotros h1 {
+  font-size: 150px;
+  color: white;
+  border: solid;
+  height: 30vh;
+  padding: auto;
+  box-shadow: 10px 15px 5px #030303;
 }
 
 .jano-img {
@@ -163,6 +184,274 @@ section.perfiles {
 section.perfiles article {
   margin-bottom: 0;
   padding-bottom: 0;
+}
+
+.frame {
+  position: absolute;
+  width: 1125px;
+  display: flex;
+  justify-content: center;
+  height: 400px;
+  margin: 40vh auto;
+  border-radius: 2px;
+  box-shadow: 0.5rem 0.5rem 1rem rgba(0, 0, 0, 0.6);
+  overflow: hidden;
+  background: #d7d6dab7;
+  color: #0a0000;
+  font-family: 'Open Sans', Helvetica, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.line {
+  position: absolute;
+  z-index: 10;
+  width: 150px;
+  height: 1px;
+  top: 198px;
+  border: solid;
+  transform: scaleX(0);
+}
+
+.line.left, .line.left-eros {
+  left: 50px;
+  transform-origin: 100% 50%;
+  animation: lines 1s ease-in-out 0.8s, line-left 1s steps(1) 0.8s;
+  background: black;
+}
+
+.line.right {
+  right: 50px;
+  background: black;
+  transform-origin: 0% 50%;
+  animation: lines 1s ease-in-out 0.8s, line-right 1s steps(1) 0.8s;
+}
+
+.bracket {
+  position: absolute;
+  z-index: 10;
+  height: 230px;
+  width: 1px;
+  margin-top: 9vh;
+  background: black;
+  animation: bracket .4s ease-out 1.7s;
+  animation-fill-mode: both;
+}
+
+.bracket:before, .bracket:after {
+  position: absolute;
+  display: block;
+  content: '';
+  width: 25px;
+  height: 1px;
+}
+
+.bracket.right:before, .bracket.right:after {
+  background: black;
+}
+
+.bracket.left, .bracket.left-eros {
+  left: 50px;
+}
+
+.bracket.left:before, .bracket.left-eros:before {
+  top: 0;
+  left: 0;
+  transform-origin: 0% 50%;
+  animation: bracket-line .2s ease-out 2.1s;
+  animation-fill-mode: both;
+}
+
+.bracket.left:after, .bracket.left-eros:after {
+  bottom: 0;
+  left: 0;
+  transform-origin: 0% 50%;
+  animation: bracket-line .2s ease-out 2.1s;
+  animation-fill-mode: both;
+}
+
+.bracket.left:before, .bracket.left-eros:before, .bracket.left:after, .bracket.left-eros:after {
+  background: black;
+}
+
+.bracket.right {
+  right: 50px;
+}
+
+.bracket.right:before {
+  top: 0;
+  right: 0;
+  transform-origin: 100% 50%;
+  animation: bracket-line .2s ease-out 2.1s;
+  animation-fill-mode: both;
+}
+
+.bracket.right:after {
+  bottom: 0;
+  right: 0;
+  transform-origin: 100% 50%;
+  animation: bracket-line .2s ease-out 2.1s;
+  animation-fill-mode: both;
+}
+
+.big {
+  position: absolute;
+  z-index: 5;
+  width: 80%;
+  margin-top: 11vh;
+  text-align: center;
+  font-size: 1.5rem;
+  letter-spacing: 2px;
+  color: #fff;
+  line-height: 50px;
+  background-clip: text;
+  transition: 0.4s ease-in;
+}
+
+.hide {
+  position: absolute;
+  z-index: 7;
+  width: 400px;
+  height: 50px;
+  background: #d7d6dab7;
+  left: 0;
+  animation: reveal .4s ease-out 1.7s;
+  animation-fill-mode: both;
+}
+
+.hide.top {
+  bottom: 49%;
+  transform-origin: 50% 0%;
+}
+
+.hide.bottom {
+  top: 49%;
+  transform-origin: 50% 100%;
+}
+
+.small {
+  position: absolute;
+  z-index: 10;
+  width: 100%;
+  text-align: center;
+  left: 0;
+  font-weight: 300;
+  font-size: 1.8rem;
+  color: #FFFFFF;
+  line-height: 30px;
+  word-spacing: .7rem;
+  text-transform: uppercase;
+}
+
+.first-letter {
+  font-family: yesteryear, cursive;
+  font-size: 3.5rem;
+  background-image: linear-gradient(33deg, #9a0fe0 25%, #ff049f);
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.small.top {
+  top: 8rem;
+  animation: small-top .5s ease-out 2.2s;
+  animation-fill-mode: both;
+}
+
+.small.bottom {
+  bottom: 8rem;
+  animation: small-bottom .5s ease-out 2.2s;
+  animation-fill-mode: both;
+}
+
+@keyframes circle {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  90%, 100% {
+    transform: scale(0);
+  }
+}
+
+@keyframes lines {
+  0% {
+    transform: scaleX(0);
+  }
+  50% {
+    transform: scaleX(1);
+  }
+  100% {
+    transform: scaleX(0);
+  }
+}
+
+@keyframes line-left {
+  0% {
+    transform-origin: 100% 50%;
+  }
+  50%, 100% {
+    transform-origin: 0% 50%;
+  }
+}
+
+@keyframes line-right {
+  0% {
+    transform-origin: 0% 50%;
+  }
+  50%, 100% {
+    transform-origin: 100% 50%;
+  }
+}
+
+@keyframes bracket {
+  0% {
+    transform: scaleY(0);
+  }
+  100% {
+    transform: scaleY(1);
+  }
+}
+
+@keyframes bracket-line {
+  0% {
+    transform: scaleX(0);
+  }
+  100% {
+    transform: scaleX(1);
+  }
+}
+
+@keyframes reveal {
+  0% {
+    transform: scaleY(1);
+  }
+  100% {
+    transform: scaleY(0);
+  }
+}
+
+@keyframes small-top {
+  0% {
+    transform: translateX(-20px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes small-bottom {
+  0% {
+    transform: translateX(20px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
 }
 
 .cardJano {
@@ -526,28 +815,6 @@ input.invalid[type=email]:not(.browser-default) {
   display: flex;
   justify-content: space-evenly;
 }
-
-.subtitulo-vip{
-  width: 100%;
-  height: 300px;
-  background-image: url('cancharacing.jpg');
-  background-size: cover;
-  background-attachment:;
-
-  
-}
-
-.sloganVip{
-  font-size: 80px;
-  margin: auto;
-  padding: auto;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-
-  
-}
-
 
 .container .card .icon {
   position: absolute;
