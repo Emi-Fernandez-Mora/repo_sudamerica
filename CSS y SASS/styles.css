@@ -1,92 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Oswald&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200;400&family=Poppins:wght@100&display=swap");
-@import url(https://fonts.googleapis.com/css?family=Erica+One);
-body {
-  font-family: 'Oswald', sans-serif !important;
-  background-image: url("corner.jpg");
-  min-height: 100%;
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  margin-bottom: 0px;
-  height: 100%;
-}
-
-footer {
-  position: relative;
-  overflow: hidden;
-  z-index: 2;
-}
-
-.navbar-brand {
-  font-size: 40px;
-}
-
-.navbar-nav {
-  font-size: 20px;
-}
-
-.navbar {
-  background-color: black;
-  position: fixed;
-  z-index: 12;
-  width: 100%;
-  top: 0;
-}
-
-.navbar-expand-lg .navbar-collapse {
-  margin-right: 200px;
-}
-
-.slogan {
-  width: 100%;
-  height: 300px;
-  background-image: linear-gradient(to right, rgba(39, 38, 38, 0.404), rgba(0, 0, 0, 0.445)), url("https://digital58.com.ve/site/wp-content/uploads/2020/06/Sudamerica.jpg");
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-}
-
-.slogan2 {
-  font-size: 50px;
-  font-weight: bolder;
-  color: #050101;
-  text-align: center;
-  padding: 9%;
-}
-
-.subtitulo {
-  width: 100%;
-  height: 70px;
-  margin-top: 0;
-  background-color: #020000;
-  margin-bottom: 3%;
-}
-
-.subtitulo h3 {
-  display: flex;
-  justify-content: center;
-  padding-top: 0;
-  font-size: 60px;
-  letter-spacing: 10px;
-}
-
-.animate__animated.animate__fadeInLeft {
-  animation-delay: 0.2s;
-  animation-duration: 2.7s;
-}
-
-.videos {
-  width: 854px;
-  height: 480px;
-}
-
-.icon {
-  font-size: 30px;
-}
-
 /*Nosotros*/
 .fotos {
   width: 300px;
@@ -98,7 +11,7 @@ footer {
   padding-top: 20vh;
   width: 100%;
   height: 100vh;
-  background-image: linear-gradient(to right, rgba(39, 38, 38, 0.404), rgba(0, 0, 0, 0.445)), url("cardNosotros.webp");
+  background-image: linear-gradient(to right, rgba(39, 38, 38, 0.404), rgba(0, 0, 0, 0.445)), url("/images/cardNosotros.webp");
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-position: center;
@@ -192,7 +105,7 @@ section.perfiles article {
   display: flex;
   justify-content: center;
   height: 400px;
-  margin: 40vh auto;
+  margin: 45vh auto;
   border-radius: 2px;
   box-shadow: 0.5rem 0.5rem 1rem rgba(0, 0, 0, 0.6);
   overflow: hidden;
@@ -557,7 +470,7 @@ img.left, img.left-eros {
   -webkit-box-shadow: 10px 10px 50px 0px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: 10px 10px 50px 0px rgba(0, 0, 0, 0.75);
   box-shadow: 10px 10px 50px 0px rgba(0, 0, 0, 0.75);
-  background-image: url("sudavioleta.png");
+  background-image: url("/images/sudavioleta.png");
   background-size: 104%;
   border: solid #4B4B4B;
 }
@@ -657,9 +570,54 @@ ul.navbar-nav li a {
   font-size: 23px;
 }
 
-.subtituloContacto {
-  margin-top: 7%;
-  height: 50vh;
+.bannerContacto {
+  display: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 80vh;
+  background-image: linear-gradient(to right, rgba(39, 38, 38, 0.404), rgba(0, 0, 0, 0.445)), url("/images/bannerContacto.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  margin-top: 0;
+}
+
+.bannerContacto div {
+  width: 100%;
+}
+
+.bannerContacto div h1 {
+  font-size: 150px;
+  color: white;
+  padding-top: 0vh;
+  margin: 15vh auto 0 auto;
+  border: solid;
+  height: 20vh;
+}
+
+.bannerContacto div {
+  display: inline-flex;
+  justify-content: space-between;
+  width: 100%;
+  padding-top: 10vh;
+  margin: auto;
+}
+
+.bannerContacto div .motivos {
+  width: 300px;
+  display: flex;
+  justify-content: center;
+  height: 30vh;
+  border-radius: 2px;
+  box-shadow: 0.5rem 0.5rem 1rem rgba(0, 0, 0, 0.6);
+  background: #d7d6dab7;
+  color: #0a0000;
+}
+
+.sectionContacto {
+  height: 100%;
+  margin-top: 5%;
 }
 
 /*Nuevo formulario*/
@@ -728,11 +686,6 @@ p label span {
   margin: 1px;
 }
 
-.sectionContacto {
-  height: 100%;
-  margin-top: 17%;
-}
-
 /*Cambiando de color inputs focus*/
 [type="checkbox"] + span:not(.lever):before {
   border: 2px solid black;
@@ -775,39 +728,6 @@ input.invalid[type=email]:not(.browser-default) {
   border-bottom: 1px solid #080707;
   -webkit-box-shadow: 0 1px 0 0 #020202;
   box-shadow: 0 1px 0 0 #0c0c0c;
-}
-
-/*Titulo contacto*/
-/* BODY */
-::selection {
-  background: transparent;
-}
-
-.subtituloContacto {
-  cursor: default;
-  position: absolute;
-  top: 30px;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  margin-top: 7%;
-  height: 100px;
-  display: block;
-  -webkit-animation: bounce .3s ease 10 alternate;
-  font-family: 'Erica One', cursive;
-  font-size: 80px;
-  color: #FFF;
-  text-align: center;
-  line-height: 100px;
-  text-shadow: 0 1px 0 #CCC, 0 2px 0 #CCC, 0 3px 0 #CCC, 0 4px 0 #CCC, 0 5px 0 #CCC, 0 6px 0 transparent, 0 7px 0 transparent, 0 8px 0 transparent, 0 9px 0 transparent, 0 10px 10px rgba(0, 0, 0, 0.6);
-}
-
-/* ANIMATION */
-@-webkit-keyframes bounce {
-  100% {
-    top: -30px;
-    text-shadow: 0 1px 0 #CCC, 0 2px 0 #CCC, 0 3px 0 #CCC, 0 4px 0 #CCC, 0 5px 0 #CCC, 0 6px 0 #CCC, 0 7px 0 #CCC, 0 8px 0 #CCC, 0 9px 0 #CCC, 0 30px 30px rgba(0, 0, 0, 0.3);
-  }
 }
 
 /*Suda Vip*/
@@ -939,14 +859,6 @@ input.invalid[type=email]:not(.browser-default) {
   margin: auto;
 }
 
-.bg_animate {
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(to right, #01a2d3, #4939b4);
-  position: relative;
-  overflow: hidden;
-}
-
 /* burbujas */
 .burbuja {
   border-radius: 50%;
@@ -968,7 +880,7 @@ input.invalid[type=email]:not(.browser-default) {
   height: 80px;
   left: 5%;
   animation-duration: 3s;
-  animation-delay: 1s;
+  animation-delay: 0s;
 }
 
 .burbuja:nth-child(2) {
@@ -1070,4 +982,98 @@ input.invalid[type=email]:not(.browser-default) {
   100% {
     transform: translateY(0);
   }
+}
+
+body {
+  font-family: 'Oswald', sans-serif !important;
+  min-height: 100%;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  margin-bottom: 0px;
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(to right, #01a2d3, #4939b4);
+  position: relative;
+}
+
+footer {
+  position: absolute;
+  width: 100%;
+  overflow: hidden;
+  z-index: 2;
+}
+
+.navbar-brand {
+  font-size: 40px;
+}
+
+.navbar-nav {
+  font-size: 20px;
+}
+
+.navbar {
+  background-color: black;
+  position: fixed;
+  z-index: 12;
+  width: 100%;
+  top: 0;
+}
+
+.navbar-expand-lg .navbar-collapse {
+  margin-right: 200px;
+}
+
+.slogan {
+  width: 100%;
+  height: 300px;
+  background-image: linear-gradient(to right, rgba(39, 38, 38, 0.404), rgba(0, 0, 0, 0.445)), url("https://digital58.com.ve/site/wp-content/uploads/2020/06/Sudamerica.jpg");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.slogan2 {
+  font-size: 50px;
+  font-weight: bolder;
+  color: #050101;
+  text-align: center;
+  padding: 9%;
+}
+
+.subtitulo {
+  width: 100%;
+  height: 70px;
+  margin-top: 0;
+  background-color: #020000;
+  margin-bottom: 3%;
+}
+
+.subtitulo h3 {
+  display: flex;
+  justify-content: center;
+  padding-top: 0;
+  font-size: 60px;
+  letter-spacing: 10px;
+}
+
+.animate__animated.animate__fadeInLeft {
+  animation-delay: 0.2s;
+  animation-duration: 2.7s;
+}
+
+.videos {
+  width: 854px;
+  height: 480px;
+}
+
+.icon {
+  font-size: 30px;
+}
+
+.logo-index {
+  width: 50px;
+  margin-bottom: 5px;
 }

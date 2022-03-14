@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;400&family=Poppins:wght@100&display=swap');
+@import "_variables";
+@import "_nosotros";
+@import "_videos";
+@import "_contacto";
+@import "_sudavip";
+@import "_fondoAnimado";
+
+body{
+    font-family: 'Oswald', sans-serif !important;
+    min-height: 100% ; 
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin-bottom: 0px;
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(to right, #01a2d3, #4939b4);
+    position: relative;
+    
+}
+
+footer{
+    position:absolute;
+    width: 100%;
+    overflow: hidden;
+    z-index: 2;
+}
+.navbar-brand{
+    font-size: 40px;
+}   
+
+.navbar-nav{
+    font-size: 20px;
+}
+.navbar{
+    background-color: black;
+    position: fixed;
+    z-index: 12;
+    width: 100%;
+    top:0
+    
+}
+
+
+.navbar-expand-lg .navbar-collapse{
+    margin-right: 200px;
+}
+
+.slogan{
+    width: 100% ;
+    height: 300px;
+    background-image: linear-gradient(to right, rgba(39, 38, 38, 0.404), rgba(0, 0, 0, 0.445)), url("https://digital58.com.ve/site/wp-content/uploads/2020/06/Sudamerica.jpg");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    
+    
+    
+
+
+}
+.slogan2{
+    font-size:50px;
+    font-weight: bolder;
+    color: rgb(5, 1, 1);
+    text-align: center;
+    padding: 9%;
+    
+    
+    
+
+}
+.subtitulo{
+    width: 100%;
+    height: 70px;
+    margin-top: 0;
+    background-color: #020000;
+    margin-bottom: 3%;
+
+    h3{
+        display: flex;
+        justify-content: center;
+        padding-top: 0;
+        font-size: 60px;
+        letter-spacing: 10px;
+    }
+}
+
+.animate__animated.animate__fadeInLeft{
+    animation-delay: 0.2s;
+    animation-duration: 2.7s;
+}
+ 
+
+.videos{
+    width: 854px;
+    height: 480px;
+}
+
+.icon{
+    font-size: 30px;
+}
+.logo-index{
+    width: 50px;
+    margin-bottom: 5px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

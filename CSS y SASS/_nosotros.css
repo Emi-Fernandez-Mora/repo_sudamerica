@@ -1,0 +1,98 @@
+/*Nosotros*/
+.fotos {
+  width: 300px;
+}
+
+.containerNosotros {
+  display: flex;
+  justify-content: center;
+  padding-top: 20vh;
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(to right, rgba(39, 38, 38, 0.404), rgba(0, 0, 0, 0.445)), url("/images/cardNosotros.webp");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.containerNosotros h1 {
+  font-size: 150px;
+  color: white;
+  border: solid;
+  height: 30vh;
+  padding: auto;
+  box-shadow: 10px 15px 5px #030303;
+}
+
+.jano-img {
+  width: 300px;
+  height: 500px;
+  border-radius: 3%;
+  border: solid;
+  border-color: white;
+  margin-left: 20px;
+}
+
+.contenedor-jano {
+  width: 800px;
+  border-radius: 3%;
+  margin-top: 15px !important;
+}
+
+.jano-card {
+  width: 850px !important;
+  height: 710px !important;
+  margin-left: 513px !important;
+  padding: 0px !important;
+  border-radius: 3%;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.jano-body {
+  margin-top: 00px !important;
+  padding-top: 0px;
+  height: 00px !important;
+}
+
+.jano-title {
+  height: 100px !important;
+  width: 810px !important;
+  font-size: 80px;
+  margin-top: 20px !important;
+  padding: 50px important;
+  border-radius: 10px;
+}
+
+.parrafo-jano {
+  margin: 10px;
+  font-size: 30px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.eros-img {
+  width: 300px;
+  height: 600px;
+  border-radius: 3%;
+  border: solid;
+  border-color: white;
+  margin-left: 20px;
+}
+
+.eros-card {
+  width: 850px !important;
+  height: 813px !important;
+  margin-left: 513px !important;
+  padding: 0px !important;
+  border-radius: 3%;
+}
+
+section.perfiles {
+  margin: auto auto auto auto;
+  padding-bottom: 0;
+}
+
+section.perfiles article {
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
