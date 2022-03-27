@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description"
         content="Conoce quienes estan detrás de Suda America, que hacemos, y nuestro camino hasta acá">
     <meta name="keywords"
@@ -20,58 +21,67 @@
 <body>
     <div class="bg_animate">
         <header>
-            <nav class="navbar navbar-expand-lg navbar-light ps-3">
-                <div class="container-fluid">
-                    <a class="navbar-brand text-white" href="index.html"> <img class="logo-index"
+            <nav class="navbar navbar-expand-lg bg-black">
+                <div class="container-fluid navBack">
+                    <a class="navbar-brand text-white ms-4" href="index.html"> <img class="logo-index"
                             src="/IMAGES/sudaamerica.png" alt="suda america futbol"> Suda America</a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <div class="container-navbar" onclick="myFunction(this)">
+                            <div class="bar1"></div>
+                            <div class="bar2"></div>
+                            <div class="bar3"></div>
+                        </div>
                     </button>
-                    <div class="collapse navbar-collapse d-flex justify-content-center" id="navbarNav">
-                        <ul class="navbar-nav pt-2 ">
-                            <li class="nav-item me-4">
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav w-100 me-4 d-flex justify-content-end">
+                            <li class="nav-item">
                                 <a class="nav-link active text-white" aria-current="page" href="index.html">Inicio</a>
                             </li>
-                            <li class="nav-item me-4">
+                            <li class="nav-item">
                                 <a class="nav-link active text-white" aria-current="page"
                                     href="Nosotros.html">Nosotros</a>
                             </li>
-                            <li class="nav-item me-4">
+                            <li class="nav-item">
                                 <a class="nav-link active text-white" aria-current="page" href="Videos.html">Videos</a>
                             </li>
-                            <li class="nav-item me-4">
+                            <li class="nav-item">
                                 <a class="nav-link active text-white" aria-current="page"
                                     href="Contacto.html">Contacto</a>
                             </li>
-                            <li class="nav-item me-4">
+                            <li class="nav-item">
                                 <a class="nav-link active text-white" aria-current="page"
-                                    href="Seguidores VIPs.html">Sudamericano
-                                    VIP</a>
+                                    href="Seguidores VIPs.html">Sudamericano VIP</a>
                             </li>
                         </ul>
+
                     </div>
                 </div>
-            </nav>
+                </nav-->
+
         </header>
 
         <div class="containerNosotros">
-            <div>
-                <h1>¿Quienes somos?</h1>
-            </div>
-            <div class="frame">
 
-                <div class="line left"></div>
-                <div class="line right"></div>
-                <div class="bracket left"></div>
-                <div class="bracket right"></div>
-                <!--div class="small top">collect</div-->
-                <div class=" big text-black">Somos dos hermanos argenitos, apasionados por el deporte. Profesionales en el ámbito del deporte, ya sea educando o informando. Fanaticos de Racing club sobre todo!
+            <h1 class="titulo-nosotros">¿Quienes somos?</h1>
 
+            <div class="container-fluid div-frame">
+                <div class="frame">
+
+                    <div class="line left"></div>
+                    <div class="line right"></div>
+                    <div class="bracket left"></div>
+                    <div class="bracket right"></div>
+                    <!--div class="small top">collect</div-->
+                    <div class=" big text-black">Somos dos hermanos argenitos, apasionados por el deporte. Profesionales
+                        en el ámbito del deporte, ya sea educando o informando. Fanaticos de Racing club sobre todo!
+
+                    </div>
+
+                    <!--div class="hide top"></div>
+                    <div class="hide bottom"></div-->
                 </div>
-
-                <!--div class="hide top"></div>
-                <div class="hide bottom"></div-->
             </div>
 
         </div>
@@ -85,19 +95,23 @@
 
             <!--Card Jano-->
 
-            <article>
-                <div class="card cardJano">
-                    <div>
-                        <div class="div-jano"><img class="left" src="/IMAGES/foto jano.PNG" alt="Jano Lamberto" /></div>
-                        <div class="right">
+            <article class="artJano">
+                <div class="card cardJano ">
+                    <div class="div-card-blanco">
+                        <div class="div-jano">
+                            <img class="left " src="/IMAGES/foto jano.PNG" alt="Jano Lamberto" />
+                        </div>
+                        <div class="right derecha-resp">
                             <h1 class="titulo-janocard">Jano Lamberto</h1>
 
                             <div class="separator"></div>
                             <p class="parrafo-jano">Periodista Deportivo <br>
-                                "Comencé desde chico en YouTube, yo sabía que quería serlo, pero nunca me hubiese imaginado que seria por lo que mas me gusta, el Futbol. 
-                                <br><br>
-                                Con mi hermano desde chicos vamos a la cancha, vivimos 24/7 futbol, y poder trabajar de lo que te apasiona es impagable.  "
-                            
+                                "Comencé desde chico en YouTube, yo sabía que quería serlo, pero nunca me hubiese
+                                imaginado que seria por lo que mas me gusta, el Futbol.
+                                <br><br class="brNO">
+                                Con mi hermano desde chicos vamos a la cancha, vivimos 24/7 futbol, y poder trabajar de
+                                lo que te apasiona es impagable. "
+
                             </p>
                         </div>
                     </div>
@@ -108,23 +122,25 @@
             <!--Card Eros-->
 
             <article>
-                <div class="card cardJano">
-                    <div>
-                        <div class="div-jano"><img class="left-eros" src="/IMAGES/foto eros.PNG" alt="Eros Lamberto" />
+                <div class="card cardJano cardEros">
+                    <div class="gridEros">
+                        <div class="div-jano div-eros"><img class="left-eros" src="/IMAGES/foto eros.PNG" alt="Eros Lamberto" />
                         </div>
-                        <div class="right">
+                        <div class="right derecha-resp">
                             <h1 class="titulo-janocard">Eros Lamberto</h1>
 
                             <div class="separator"></div>
-                            <p class="parrafo-jano"> Profesor de Educación Física 
+                            <p class="parrafo-jano parrafoEros"> Profesor de Educación Física
                                 <br>
-                                Toda mi vida paso por el deporte, sobre todo el futbol. Me miraba todos los partidos que había en la tele, y hoy eso se convirtió en mi trabajo. <br><br>
-                                Con Janito estamos agradecidos de poder dar nuestra visión del futbol y que podamos compartir en esta comunidad que creamos.
-                            
+                                Toda mi vida paso por el deporte, sobre todo el futbol. Me miraba todos los partidos que
+                                había en la tele, y hoy eso se convirtió en mi trabajo. <br><br class="brNO">
+                                Con Janito estamos agradecidos de poder dar nuestra visión del futbol y que podamos
+                                compartir en esta comunidad que creamos.
+
                             </p>
                         </div>
                     </div>
-                    <div class="fab"></div>
+                    <div class="fab fabEros "></div>
                 </div>
             </article>
         </section>
@@ -144,14 +160,17 @@
         </div>
         <footer>
             <div class="card-body bg-black mt-5 pt-5">
-                <ul class="list-inline row row-cols-lg-auto d-flex justify-content-center">
-                    <li><a class="icon icon-instagram text-decoration-none text-white me-4"
+                <ul class="items-footer">
+                    <li>
+                        <a class="icon icon-instagram text-decoration-none text-white me-4"
                             href="https://www.instagram.com/sudaamerica/" target="_blank"></a>
                     </li>
-                    <li><a class="icon icon-youtube text-decoration-none text-white me-4"
+                    <li>
+                        <a class="icon icon-youtube text-decoration-none text-white me-4"
                             href="https://www.youtube.com/channel/UCZBIHZWn99GcJo9_ynHwz7Q" target="_blank"></a>
                     </li>
-                    <li><a class="icon icon-twitter text-decoration-none text-white me-4"
+                    <li>
+                        <a class="icon icon-twitter text-decoration-none text-white me-4"
                             href="https://twitter.com/SudaAmerica" target="_blank"></a></li>
                     <li><a class="icon icon-tiktok text-decoration-none text-white me-4"
                             href="https://vm.tiktok.com/ZMLNuPwxM/" target="_blank"></a></li>

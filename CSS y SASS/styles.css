@@ -1,12 +1,88 @@
 @import url("https://fonts.googleapis.com/css2?family=Oswald&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200;400&family=Poppins:wght@100&display=swap");
+
+html{
+  min-height: 100vh;
+  min-width:auto;
+  
+}
+
+body {
+  font-family: 'Oswald', sans-serif ;
+  min-height: 100vh;
+  min-width: 100%;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  margin-bottom: 0px;
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(to right, #01a2d3, #4939b4);
+  position: relative;
+}
+
+/*NavBar*/
+
+.navBack{
+  background-color: rgba(0, 0, 0, 0.336);
+}
+
+.navbar{
+  height: 10vh;
+}
+
+.navbar-brand{
+  font-size: 40px;
+}
+.nav-link{
+  font-size: 25px;
+}
+
+.nav-link{
+  margin:0 10px;
+}
+
+/*Menu hamburgesa*/
+.container-navbar {
+  display: inline-block;
+  cursor: pointer;
+}
+
+.bar1, .bar2, .bar3 {
+  width: 35px;
+  height: 5px;
+  background-color: rgb(255, 255, 255);
+  margin: 6px 0;
+  border: white;
+  transition: 0.4s;
+}
+
+/* Rotate first bar */
+.change .bar1 {
+  -webkit-transform: rotate(-45deg) translate(-9px, 6px) ;
+  transform: rotate(-45deg) translate(-9px, 6px) ;
+}
+
+/* Fade out the second bar */
+.change .bar2 {
+  opacity: 0;
+}
+
+/* Rotate last bar */
+.change .bar3 {
+  -webkit-transform: rotate(45deg) translate(-8px, -8px) ;
+  transform: rotate(45deg) translate(-8px, -8px) ;
+}
+
+
 /*Nosotros*/
 .fotos {
   width: 300px;
 }
 
 .containerNosotros {
-  display: flex;
+  display: row;
   justify-content: center;
   padding-top: 20vh;
   width: 100%;
@@ -17,13 +93,18 @@
   background-position: center;
   background-size: cover;
 }
+.title-nosotros{
+  display: flex;
+  justify-content: center;
+  width: 50%;
+  height: 10vh;
+  margin: 0;
+}
 
 .containerNosotros h1 {
   font-size: 150px;
   color: white;
   border: solid;
-  height: 30vh;
-  padding: auto;
   box-shadow: 10px 15px 5px #030303;
 }
 
@@ -39,30 +120,30 @@
 .contenedor-jano {
   width: 800px;
   border-radius: 3%;
-  margin-top: 15px !important;
+  margin-top: 15px ;
 }
 
 .jano-card {
-  width: 850px !important;
-  height: 710px !important;
-  margin-left: 513px !important;
-  padding: 0px !important;
+  width: 850px ;
+  height: 710px ;
+  margin-left: 513px ;
+  padding: 0px ;
   border-radius: 3%;
   background-color: rgba(255, 255, 255, 0.5);
 }
 
 .jano-body {
-  margin-top: 00px !important;
+  margin-top: 00px ;
   padding-top: 0px;
-  height: 00px !important;
+  height: 00px ;
 }
 
 .jano-title {
-  height: 100px !important;
-  width: 810px !important;
+  height: 100px ;
+  width: 810px ;
   font-size: 80px;
-  margin-top: 20px !important;
-  padding: 50px important;
+  margin-top: 20px ;
+  padding: 50px ;
   border-radius: 10px;
 }
 
@@ -82,10 +163,10 @@
 }
 
 .eros-card {
-  width: 850px !important;
-  height: 813px !important;
-  margin-left: 513px !important;
-  padding: 0px !important;
+  width: 850px ;
+  height: 813px ;
+  margin-left: 513px ;
+  padding: 0px ;
   border-radius: 3%;
 }
 
@@ -99,13 +180,29 @@ section.perfiles article {
   padding-bottom: 0;
 }
 
+.div-frame{
+  width: 100%;
+  
+  height: 35vh;
+}
+
+.titulo-nosotros{
+  text-align: center;
+  width: 60%;
+  height: 25%;
+  margin-left: auto;
+  margin-right: auto;
+  
+}
+
 .frame {
-  position: absolute;
-  width: 1125px;
+  position: relative;
+  display: flex;
+  width: 100%;
   display: flex;
   justify-content: center;
   height: 400px;
-  margin: 45vh auto;
+  margin-top: 100px;
   border-radius: 2px;
   box-shadow: 0.5rem 0.5rem 1rem rgba(0, 0, 0, 0.6);
   overflow: hidden;
@@ -370,13 +467,14 @@ section.perfiles article {
 .cardJano {
   position: relative;
   height: 450px;
-  width: 900px;
+  width: 70%;
   margin: 200px auto;
   background-color: #FFF;
   -webkit-box-shadow: 10px 10px 93px 0px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: 10px 10px 93px 0px rgba(0, 0, 0, 0.75);
   box-shadow: 10px 10px 93px 0px rgba(0, 0, 0, 0.75);
 }
+
 
 /* Image on the left side */
 .div-jano {
@@ -408,7 +506,7 @@ img.left, img.left-eros {
 }
 
 .left-eros {
-  margin-top: 0% !important;
+  margin-top: 39% ;
   margin-left: 1px;
 }
 
@@ -421,7 +519,7 @@ img.left, img.left-eros {
 .titulo-janocard {
   padding-top: 15px;
   padding-bottom: 0;
-  font-size: 2rem;
+  font-size: 2.3rem;
   color: #4B4B4B;
 }
 
@@ -433,7 +531,7 @@ img.left, img.left-eros {
 .parrafo-jano {
   text-align: justify;
   padding-top: 10px;
-  font-size: 0.95rem;
+  font-size: 1.5rem;
   line-height: 150%;
   font-weight: 1000;
   color: #0a0101;
@@ -509,6 +607,7 @@ div li {
   justify-content: space-between;
   width: 100%;
   height: 10vh;
+  padding-top: 1%;
   background-color: #181818;
 }
 
@@ -558,30 +657,7 @@ div li {
 }
 
 /*Contacto*/
-.navbarContacto {
-  height: 11%;
-}
 
-ul.navbar-nav li {
-  padding: 0 10px;
-}
-
-.nav-item{
-  text-decoration: none;
-  background-image: linear-gradient(white, white);
-  background-position: 0% 100%;
-  background-repeat: no-repeat;
-  background-size: 0% 2px;
-  transition: background-size .3s;
-}
-
-.nav-item:hover{
-  background-size: 100% 2px;
-}
-
-ul.navbar-nav li a {
-  font-size: 23px;
-}
 
 .bannerContacto {
   display: row;
@@ -768,6 +844,7 @@ input.invalid[type=email]:not(.browser-default) {
   height: 45vh;
   padding-top: 10%;
   background-image: linear-gradient(to right, rgba(204, 193, 193, 0.404), rgba(206, 189, 189, 0.445)), url(/IMAGES/bannerVip.png);
+  background-size: cover;
 }
 
 .container .card .icon {
@@ -813,7 +890,8 @@ input.invalid[type=email]:not(.browser-default) {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 20px;
+  padding: 2px;
+  
   box-sizing: border-box;
   transition: .8s;
   transform: translateY(-100px);
@@ -836,10 +914,6 @@ input.invalid[type=email]:not(.browser-default) {
   background: #ccd2db;
 }
 
-.content-cardVip {
-  
-  
-}
 .content-cardVip{
   font-size: 18px;
   color: black;
@@ -1037,52 +1111,26 @@ input.invalid[type=email]:not(.browser-default) {
   }
 }
 
-body {
-  font-family: 'Oswald', sans-serif !important;
-  min-height: 100%;
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  margin-bottom: 0px;
-  height: 100%;
-  width: 100%;
-  background: linear-gradient(to right, #01a2d3, #4939b4);
-  position: relative;
-}
+
 
 footer {
-  position: absolute;
+  position:absolute;
+  display: block;
   width: 100%;
   overflow: hidden;
   z-index: 100;
 }
+.items-footer{
+  display: inline-flex;
+  
+}
+ul.items-footer li{
+  margin: 0 10px;
+}
 .card-body{
   display: flex;
   justify-content: center;
- 
 }
-
-.navbar-brand {
-  font-size: 40px;
-}
-
-.navbar-nav {
-  font-size: 20px;
-}
-
-.navbar {
-  background-color: black;
-  position: fixed;
-  z-index: 12;
-  width: 100%;
-  top: 0;
-}
-
-.navbar-expand-lg .navbar-collapse {
-  margin-right: 200px;
-}
-
 .slogan {
   width: 100%;
   height: 300px;
@@ -1137,4 +1185,587 @@ footer {
 .logo-index {
   width: 50px;
   margin-bottom: 5px;
+}
+
+
+@media only screen and (min-width: 1200px) and (max-width:1927px) {
+  .slogan2{
+    font-size: 5rem;
+    padding-top: 3%;
+  }
+  .big{
+    font-size: 3rem;
+  }
+  img.left-eros{
+    margin-top: 0%;
+  }
+}  
+@media only screen and (min-width: 992px) and (max-width:1200px) {
+
+
+  footer{
+    margin-top:5%;
+    position: absolute;
+  }
+  .conjunto-videos{
+    margin-top: 10%;
+  }
+
+  /*Nosotros*/
+
+  
+  .containerNosotros h1 { 
+    font-size:8rem;
+    height: 20vh;
+    width: 80%;
+  }
+  .containerNosotros{
+    height: 90vh;
+  }
+  .frame {
+    height: 28vh;
+    margin-top: 19%;
+    padding-top:2%
+  }
+
+  .cardJano{
+    margin-top:10%
+  }
+  .card {
+    width: 90%;
+  }
+  
+  .div-jano{
+    width: 400px;
+    height: 420px;
+    
+  }
+  
+  .cardEros{
+    margin-top: 5%;
+    margin-bottom: 4%;
+  }
+  .big {
+    margin-top: 5vh;
+    font-size: 23px;
+  }
+  .bracket{
+    margin-top: 3vh;
+    height: 200px;
+  }
+  .line{
+    top:14vh;
+  }
+  img.left{
+    margin-top: 39%;
+    
+  }
+  img.left-eros{
+    margin-top:0%;
+    height: 430px;
+    
+  }
+  .derecha-resp{
+    margin-left: 510px;
+  }
+  
+  /*VIP*/
+  .sloganVip {
+    font-size: 75px;
+  }
+  .subtitulo-vip {
+    height: 30vh;
+  }
+  .F2{
+    margin-top: 7%;
+
+  }
+  /*Videos*/
+
+  .btnVideos{
+    padding-top: 1%;
+  }
+  /*Contacto*/
+  .bannerContacto div h1 {
+    font-size: 8rem;
+  }
+  .bannerContacto div .motivos {
+    padding-top: 4%;
+  }
+  .F1{
+    margin-top: 10%;
+  }
+
+}  
+@media only screen and (min-width: 768px) and (max-width:992px) {
+  
+  /*index*/
+  .slogan2{
+    width: 100%;
+    font-size:4rem;
+    padding:6%;
+  }
+  .videos{
+    width: 80%;
+    height: 355px;
+  }
+  .sectCarousel{
+    margin-top: 10%;
+  }
+  
+  /*Nosotros*/
+  .containerNosotros{
+    height: 90vh;
+  }
+  .containerNosotros h1{
+    width: 90%;
+    font-size: 6.5rem;
+  }
+  .big {
+    margin-top: 5vh;
+    font-size: 20px;
+  }
+
+  
+  .line{
+    top:15vh;
+  }
+  .cardJano{
+    height: 87vh;
+    width: 90%;
+    margin-top: 9%;
+    margin-bottom: 20px;
+  }
+  .right{
+    margin: 0 2%;
+    
+    
+  }
+  .bracket{
+    top:-20px;
+    height: 215px;
+    margin-top:5vh;
+  }
+  .div-card-blanco{
+    display: grid;
+  }
+  .div-jano {
+    position: relative;
+    width: 450px;
+    height: 380;
+    padding-top: 0px;
+    margin-top: 0px;
+    padding-bottom: 350px;
+    margin-left: 22%;
+    
+  }
+  .cardEros{
+    height: 90vh;
+  }
+  .titulo-janocard{
+    text-align: center;
+    font-size: 2.7rem;
+    margin-top: 0;
+    padding: 0;
+  }
+
+  .fab{
+    right: 15px;
+  }
+
+  .gridEros{
+    display: grid;
+   
+  }
+  
+  .brNO{
+    display: none;
+  }
+  .parrafoEros{
+    margin-top: 3%;
+  }
+
+
+  /*Videos*/
+  .conjunto-videos{
+    margin:3%;
+  }
+
+  .btYT1{
+    display:block;
+  }
+
+  .btUni{
+    display: none;
+  }
+
+  .btnVideos{
+    display: block;
+    height: 25vh;
+    width: 100%;
+    padding-left: 27%;
+    padding-top: 1.5%;
+  }
+  
+  .bt1{
+    margin-left: 16%;
+    margin-right: auto;
+  }
+  .bt2{
+    margin-left: 7%;
+    margin-right: auto;
+  }
+  .bt3{
+    padding-left: 45%;
+    margin-right: auto;
+  }
+  .videos{
+    height: 35vh;
+  }
+
+  .bannerContacto div h1 {
+    font-size:6.3rem
+  }
+  
+  .bannerContacto{
+    height: 90vh;
+  }
+
+  /*Contacto*/
+
+  .divMotivos{
+    height: 50vh;
+  }
+
+  .bannerContacto div .motivos{
+    margin: auto 1%;
+  }
+  .motA{
+    padding: 0;
+    margin: 0;
+  }
+  .bannerContacto div{
+    padding: 0;
+  }
+  .bannerContacto div .motB{
+    margin-top: 10%;
+  }
+  .sloganVip {
+    font-size: 73px;
+  
+  }
+  .subtitulo-vip{
+    height: 30vh;
+  }
+  .container-cards {
+    display: block;  
+  }
+  .card-vip {
+    width: 600px;
+    
+    margin: auto;
+  }
+  .content{
+    width: 500px;
+  }
+
+  .container .card .slide {
+    width: 600px;
+    height: 400px;
+  }
+  .container .card .slide.slide2 {
+    width: 600px;
+    height: 200px;
+    
+  }
+}
+
+@media (min-width: 600px) and (max-width:768px){
+
+  
+  body{
+    width: 100%;
+  }
+  .F2{
+    height: 100vh;
+  }
+  .formularioNuevo h1 {
+    text-align: center;
+    font-size: 5rem;
+  }
+  .formResp{
+    display: grid;
+  }
+
+  input:not([type]), input[type=text]:not(.browser-default), input[type=password]:not(.browser-default), input[type=email]:not(.browser-default), input[type=url]:not(.browser-default), input[type=time]:not(.browser-default), input[type=date]:not(.browser-default), input[type=datetime]:not(.browser-default), input[type=datetime-local]:not(.browser-default), input[type=tel]:not(.browser-default), input[type=number]:not(.browser-default), input[type=search]:not(.browser-default), textarea.materialize-textarea {
+    height: 8vh;
+  }
+  
+  .row .col.inputVIP{
+    width: 100%;
+  }
+
+  .bannerContacto{
+    height: 91.5vh;
+  }
+
+  .bannerContacto div h1 {
+    font-size: 5rem;
+    margin: 1vh auto 0 auto;
+  }
+  .bannerContacto .divH1{
+    padding: 0;
+  }
+  
+  .bannerContacto .divMotivos{
+    display: grid;
+    
+    height: 60vh;
+    padding: 0;
+  }
+  .bannerContacto div .motivos{
+    font-size: 2rem;
+    width: 80%;
+    height: 20vh;
+    
+  }
+  .F1{
+    height: 71vh;
+
+  }
+
+  .formularioNuevo .T1{
+    font-size: 4rem;
+    padding-right: 20%;
+    margin-right: 20%;
+    
+  }
+
+  .formContResp{
+    display: grid;
+    
+    height: 23vh;
+  } 
+  .row .col .inputCont{
+    width: 100%;
+  }
+  .div-botones{
+    margin-left: 100px ;
+  }
+  .formularioNuevo{
+    width: 100%;
+  }
+  
+
+  .btnVideos{
+    height: 30vh;
+    width: 100%;
+  }
+  .btYT1{
+    display: grid;
+    width: 100%;
+  }
+  .btUni{
+    display: none;
+  }
+  .btnVideos{
+    display: grid;
+    
+  }
+  li.bt1{
+    width: 100%;
+    margin: 3% auto 0px 73%;
+  }
+  li.bt2{
+    width: 100%;
+    margin: 0 50%;
+  }
+  li.bt3{
+    width: 100%;
+    margin: 0 50%;
+  }
+  
+  
+  .conjunto-videos{
+    display: flex;
+    justify-content: center;
+    
+  }
+
+  .videos{
+    height: 290px;
+    width: 500px;
+    margin: 11.5% auto;
+  }
+
+  .containerNosotros{
+    height: 90vh;
+    padding-top: 3vh;
+  }
+  .containerNosotros h1 {
+    width: 73%;
+    height: 35vh;
+    font-size: 8rem;
+  }
+
+  .big {
+    margin-top: 5vh;
+    font-size: 15px;
+  }
+  .bracket{
+    height: 190px;
+  } 
+  .line{
+    top:13vh;
+  }
+
+  .div-jano {
+    position: relative;
+    width: 350px;
+    height: 390px;
+  }
+  .div-card-blanco{
+    display: grid;
+  }
+  .derecha-resp{
+    margin:auto 2%;
+  }
+
+  .gridEros{
+    display: grid;
+  }
+  .slogan2{
+    font-size: 3.5rem ;
+    padding-top: 10%;
+    
+  }
+  
+  .frame{
+    height: 27vh;
+  }
+  img.left, img.left-eros {
+    margin-top: 35%;
+  }
+  img.left-eros{
+    height: 100%;
+    margin-top: 0%;
+  }
+  .bannerContacto div h1 {
+    font-size:6rem ;
+    padding-top: 3%;
+  }
+
+  .bannerContacto .divMotivos {
+    margin-top: 5%;
+}
+  .bannerContacto div .motB {
+    margin-top: 0%;
+  }
+  .bannerContacto .divMotivos .motivos{
+    margin: 2% auto auto auto;
+    padding: 5%;
+  }
+  .subtitulo-vip{
+    height: 30vh;
+  }
+  .sloganVip {
+    font-size: 4rem;
+  }
+  .slogan2 {
+    font-size: 3.2rem;
+    padding-top: 7%;
+  }
+}
+
+@media only screen and (min-width:300px) and (max-width:600px){
+  
+  .slogan2 {
+    font-size: 3.2rem;
+    padding-top: 7%;
+  }
+  .line{
+    top:130px
+  }
+  .bracket{
+    margin-top: 4vh;
+    
+  }
+  .right {
+    margin-left: 580px;
+    margin-right: 10px;
+  }
+  .big{
+    margin-top: 4vh;
+  }
+  .artJano{
+    height: 100vh;
+  }
+  .cardJano{
+    height: 95vh;
+  }
+  .perfiles{
+    margin: 0 auto auto auto;
+  }
+  .div-card-blanco{
+    display: grid;
+  }
+  .derecha-resp{
+    margin:auto 2px;
+  }
+  .parrafo-jano{
+    font-size: 1.2rem;
+  }
+
+  img.left {
+    margin-top: 31%;
+  }
+
+  li.bt3{
+    margin-left: 187%;
+  }
+  li.bt2{
+    margin-left: 110%
+  }
+  li.bt1{
+    margin-left: 137%;
+  }
+  .bannerContacto div h1 {
+    font-size: 5rem;
+    height: 15vh;
+  }
+
+  .sloganVip {
+    font-size: 6rem;
+  }
+  .subtitulo-vip {
+    height: 40vh;
+  }
+  
+  .card-vip {
+    width: 500px;
+    margin: auto;
+  }
+  .content{
+    width: 500px;
+  }
+
+  .container .card .slide {
+    width: 500px;
+    height: 400px;
+  }
+  .container .card .slide.slide2 {
+    width: 500px;
+    height: 200px;
+    
+  }
+  .F2{
+    height: 110vh;
+  }
+  .titulo-janocard {
+    text-align: center;
+  }
+  .container-cards {
+    display: block;
+    width: 100%;
+  }
 }
