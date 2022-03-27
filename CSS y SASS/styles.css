@@ -7,6 +7,19 @@ html{
   
 }
 
+
+.nav-link {
+  text-decoration: none;
+  background-image: linear-gradient(to right, #01a2d3, #4939b4);
+  background-position: 0% 100%;
+  background-repeat: no-repeat;
+  background-size: 0% 2px;
+  transition: background-size .3s;
+}
+.nav-link:hover, a:focus {
+  background-size: 100% 2px;
+}
+
 body {
   font-family: 'Oswald', sans-serif ;
   min-height: 100vh;
